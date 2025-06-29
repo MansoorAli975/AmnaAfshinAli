@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>landing page me2</title>
+  <meta charset="UTF-8">
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .hover-work:hover {
+      content: url('AmnaAfshinAli_03.jpg');
+    }
+
+    .hover-expression:hover {
+      content: url('AmnaAfshinAli_04.jpg');
+    }
+
+    .hover-work,
+    .hover-expression {
+      transition: all 0.3s ease;
+      display: block;
+    }
+
+    .scaler {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0.95);
+      /* default scale, adjust below with media query */
+      transform-origin: top center;
+    }
+
+    @media (min-height: 959px) {
+      .scaler {
+        transform: translate(-50%, -50%) scale(1);
+      }
+    }
+
+    @media (max-height: 850px) {
+      .scaler {
+        transform: translate(-50%, -50%) scale(0.88);
+      }
+    }
+
+    @media (max-height: 700px) {
+      .scaler {
+        transform: translate(-50%, -50%) scale(0.75);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="scaler">
+    <table id="Table_01" width="1700" height="958" border="0" cellpadding="0" cellspacing="0" align="center">
+      <tr>
+        <td colspan="4">
+          <img src="AmnaAfshinAli_01.jpg" width="1700" height="791" alt="">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="AmnaAfshinAli_02.jpg" width="273" height="90" alt="">
+        </td>
+        <td>
+          <a href="https://drive.google.com/file/d/1DzjADGpg6H1E0Lp5fsRIEYf96hUk-Rhf/view?usp=sharing" target="_blank">
+            <img src="landing-page-me2_03.jpg" width="521" height="90" alt="" class="hover-work">
+          </a>
+        </td>
+        <td>
+          <a href="https://www.linkedin.com/in/amna-afshin-ali-14147221" target="_blank">
+            <img src="landing-page-me2_04.jpg" width="615" height="90" alt="" class="hover-expression">
+          </a>
+        </td>
+        <td>
+          <img src="AmnaAfshinAli_05.jpg" width="291" height="90" alt="">
+        </td>
+      </tr>
+      <tr>
+        <td colspan="4">
+          <img src="AmnaAfshinAli_06.jpg" width="1700" height="77" alt="">
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+</html>
