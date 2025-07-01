@@ -2,8 +2,9 @@
 <html>
 
 <head>
-    <title>landing page me2</title>
-    <meta charset="UTF-8">
+    <title>Amna Afshin Ali</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         html,
         body {
@@ -14,17 +15,8 @@
             overflow: hidden;
         }
 
-        .hover-work:hover {
-            content: url('AmnaAfshinAli_03.jpg');
-        }
-
-        .hover-expression:hover {
-            content: url('AmnaAfshinAli_04.jpg');
-        }
-
-        .hover-work,
-        .hover-expression {
-            transition: all 0.3s ease;
+        /* Desktop version scaled to fit screen */
+        .desktop {
             display: block;
         }
 
@@ -33,7 +25,6 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%) scale(0.95);
-            /* default scale, adjust below with media query */
             transform-origin: top center;
         }
 
@@ -54,42 +45,110 @@
                 transform: translate(-50%, -50%) scale(0.75);
             }
         }
+
+        /* Hide desktop on small screens */
+        @media (max-width: 768px) {
+            .desktop {
+                display: none;
+            }
+
+            .mobile {
+                display: block;
+                width: 100%;
+                text-align: center;
+                overflow-y: auto;
+                height: auto;
+            }
+
+            .mobile img {
+                max-width: 100%;
+                height: auto;
+                display: block;
+                margin: 0 auto;
+            }
+
+            .mobile-buttons {
+                margin-top: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 12px;
+            }
+
+            .mobile-buttons a img {
+                width: 90%;
+                max-width: 400px;
+                height: auto;
+            }
+        }
+
+        /* Hide mobile by default */
+        .mobile {
+            display: none;
+        }
+
+        .hover-work:hover {
+            content: url('AmnaAfshinAli_03.jpg');
+        }
+
+        .hover-expression:hover {
+            content: url('AmnaAfshinAli_04.jpg');
+        }
+
+        .hover-work,
+        .hover-expression {
+            transition: all 0.3s ease;
+            display: block;
+        }
     </style>
 </head>
 
 <body>
-    <div class="scaler">
-        <table id="Table_01" width="1700" height="958" border="0" cellpadding="0" cellspacing="0" align="center">
-            <tr>
-                <td colspan="4">
-                    <img src="AmnaAfshinAli_01.jpg" width="1700" height="791" alt="">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="AmnaAfshinAli_02.jpg" width="273" height="90" alt="">
-                </td>
-                <td>
-                    <a href="https://drive.google.com/file/d/1DzjADGpg6H1E0Lp5fsRIEYf96hUk-Rhf/view?usp=sharing"
-                        target="_blank">
-                        <img src="landing-page-me2_03.jpg" width="521" height="90" alt="" class="hover-work">
-                    </a>
-                </td>
-                <td>
-                    <a href="https://www.linkedin.com/in/amna-afshin-ali-14147221" target="_blank">
-                        <img src="landing-page-me2_04.jpg" width="615" height="90" alt="" class="hover-expression">
-                    </a>
-                </td>
-                <td>
-                    <img src="AmnaAfshinAli_05.jpg" width="291" height="90" alt="">
-                </td>
-            </tr>
-            <tr>
-                <td colspan="4">
-                    <img src="AmnaAfshinAli_06.jpg" width="1700" height="77" alt="">
-                </td>
-            </tr>
-        </table>
+    <!-- DESKTOP VERSION with scaling -->
+    <div class="desktop">
+        <div class="scaler">
+            <table width="1700" height="958" border="0" cellpadding="0" cellspacing="0" align="center">
+                <tr>
+                    <td colspan="4">
+                        <img src="AmnaAfshinAli_01.jpg" width="1700" height="791" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="AmnaAfshinAli_02.jpg" width="273" height="90" alt=""></td>
+                    <td>
+                        <a href="https://drive.google.com/file/d/1DzjADGpg6H1E0Lp5fsRIEYf96hUk-Rhf/view?usp=sharing"
+                            target="_blank">
+                            <img src="landing-page-me2_03.jpg" width="521" height="90" alt="" class="hover-work">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.linkedin.com/in/amna-afshin-ali-14147221" target="_blank">
+                            <img src="landing-page-me2_04.jpg" width="615" height="90" alt="" class="hover-expression">
+                        </a>
+                    </td>
+                    <td><img src="AmnaAfshinAli_05.jpg" width="291" height="90" alt=""></td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <img src="AmnaAfshinAli_06.jpg" width="1700" height="77" alt="">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- MOBILE VERSION -->
+    <div class="mobile">
+        <img src="images/AmnaAfshinAli_01-mobile.jpg" alt="Amna Afshin Ali Mobile Header">
+        <div class="mobile-buttons">
+            <a href="https://drive.google.com/file/d/1DzjADGpg6H1E0Lp5fsRIEYf96hUk-Rhf/view?usp=sharing"
+                target="_blank">
+                <img src="images/landing-page-me2_03.jpg" alt="Professional Work">
+            </a>
+            <a href="https://www.linkedin.com/in/amna-afshin-ali-14147221" target="_blank">
+                <img src="images/landing-page-me2_04.jpg" alt="Personal Expression">
+            </a>
+        </div>
     </div>
 </body>
 
