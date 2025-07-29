@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>SHAPE Rebranding Project</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: black;
+      font-family: Gotham, sans-serif;
+      color: white;
+    }
+
+    .header {
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 200px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header .title {
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .header .nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 30px;
+      font-size: 14px;
+    }
+
+    .campaign img,
+    .campaign video {
+      width: 90%;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .campaign.first img,
+    .campaign.first video {
+      margin-top: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 10px;
+      }
+
+      .header .nav {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .header .nav a {
+        margin: 0;
+        font-size: 14px;
+      }
+
+      .campaign img,
+      .campaign video {
+        width: 90%;
+        margin: 0 auto;
+      }
+
+      .campaign.first img,
+      .campaign.first video {
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="title">SHAPE Rebranding Project</div>
+    <div class="nav">
+      <a href="/AAAli/index.html">Home</a>
+      <a href="mailto:amnaafshinali@gmail.com">Email</a>
+      <a href="/AAAli/professional works/professional-work.html">Back to portfolio</a>
+    </div>
+  </div>
+
+  <!-- CAMPAIGN MEDIA -->
+  <div class="campaign first">
+    <video autoplay muted loop playsinline>
+      <source src="SHAPE_01.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="campaign"><img src="SHAPE_02.jpg" alt="SHAPE Slide 2"></div>
+  <div class="campaign"><img src="SHAPE_03.jpg" alt="SHAPE Slide 3"></div>
+  <div class="campaign"><img src="SHAPE_04.jpg" alt="SHAPE Slide 4"></div>
+  <div class="campaign"><img src="SHAPE_05.jpg" alt="SHAPE Slide 5"></div>
+  <div class="campaign"><img src="SHAPE_06.jpg" alt="SHAPE Slide 6"></div>
+  <div class="campaign"><img src="SHAPE_07.jpg" alt="SHAPE Slide 7"></div>
+  <div class="campaign"><img src="SHAPE_08.jpg" alt="SHAPE Slide 8"></div>
+  <div class="campaign"><img src="SHAPE_09.jpg" alt="SHAPE Slide 9"></div>
+  <div class="campaign"><img src="SHAPE_10.jpg" alt="SHAPE Slide 10"></div>
+  <div class="campaign"><img src="SHAPE_11.jpg" alt="SHAPE Slide 11"></div>
+  <div class="campaign"><img src="SHAPE_12.jpg" alt="SHAPE Slide 12"></div>
+
+  <div class="campaign">
+    <video autoplay muted loop playsinline>
+      <source src="SHAPE_13.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="campaign"><img src="SHAPE_14.jpg" alt="SHAPE Slide 14"></div>
+  <div class="campaign"><img src="SHAPE_15.jpg" alt="SHAPE Slide 15"></div>
+
+</body>
+
+</html>

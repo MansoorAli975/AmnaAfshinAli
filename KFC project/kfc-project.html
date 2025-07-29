@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>KFC Ramadan Campaign</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: black;
+      font-family: Gotham, sans-serif;
+      color: white;
+    }
+
+    .header {
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 200px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header .title {
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .header .nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 30px;
+      font-size: 14px;
+    }
+
+    .campaign img {
+      width: 90%;
+      display: block;
+      margin: 0 auto;
+      border-radius: 0;
+      padding: 0;
+    }
+
+    .campaign.first img {
+      margin-top: 30px;
+      /* ✅ only top margin for first image */
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 10px;
+      }
+
+      .header .nav {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .header .nav a {
+        margin: 0;
+        font-size: 14px;
+      }
+
+      .campaign img {
+        width: 90%;
+        margin: 0 auto;
+      }
+
+      .campaign.first img {
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="title">KFC Ramadan Campaign</div>
+    <div class="nav">
+      <a href="/AAAli/index.html">Home</a>
+      <a href="mailto:amnaafshinali@gmail.com">Email</a>
+      <a href="/AAAli/professional works/professional-work.html">Back to portfolio</a>
+    </div>
+  </div>
+
+  <!-- CAMPAIGN SLICES -->
+  <div class="campaign first"><img src="KFC_01.jpg" alt="KFC Slice 1"></div>
+  <div class="campaign"><img src="KFC_02.jpg" alt="KFC Slice 2"></div>
+  <div class="campaign"><img src="KFC_03.jpg" alt="KFC Slice 3"></div>
+  <div class="campaign"><img src="KFC_04.jpg" alt="KFC Slice 4"></div>
+  <div class="campaign"><img src="KFC_05.jpg" alt="KFC Slice 5"></div>
+  <div class="campaign"><img src="KFC_06.jpg" alt="KFC Slice 6"></div>
+  <div class="campaign"><img src="KFC_07.jpg" alt="KFC Slice 7"></div>
+  <div class="campaign"><img src="KFC_08.jpg" alt="KFC Slice 8"></div>
+  <div class="campaign">
+    <video width="90%" style="display: block; margin: 0 auto;" autoplay muted loop playsinline>
+      <source src="KFC_09.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="campaign"><img src="KFC_10.jpg" alt="KFC Slice 10"></div>
+  <div class="campaign"><img src="KFC_11.jpg" alt="KFC Slice 11"></div>
+
+</body>
+
+</html>
